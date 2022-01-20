@@ -1,4 +1,4 @@
-class Menu extends HTMLElement {
+class HeaderMenu extends HTMLElement {
   constructor(){
     super();
 
@@ -14,4 +14,4 @@ class Menu extends HTMLElement {
   }
 }
 
-customElements.define('menu', Menu);
+customElements.define('header-menu', HeaderMenu);
