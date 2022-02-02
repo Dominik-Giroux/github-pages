@@ -7,10 +7,44 @@
   <title>A Basic HTML5 Template</title>
 </head>
 
+<style>
+
+  main {
+    margin: 0 auto;
+    display: grid;
+    gap: 30px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: 1200px) {
+    main {      
+      grid-template-columns: repeat(2, 1fr);      
+    }
+  }  
+</style>
+
 <body>
-  <header-menu></header-menu>
-  <h1>Hello World!</h1>
-  <a href="/github-pages/about">About</a>
+  <main>
+    <div>
+      <header-menu></header-menu>
+      <h1>Hello World!</h1>
+      <a href="/github-pages/about">About</a>
+    </div>
+    <div>
+      <img
+        srcset="https://cdn.shopify.com/s/files/1/0122/4785/9296/products/AgateAntiqueBrassWireWrappedNecklace.png?format=pjpg&v=1639338480&width=1200 1200w, https://cdn.shopify.com/s/files/1/0122/4785/9296/products/AgateAntiqueBrassWireWrappedNecklace.png?format=pjpg&v=1639338480&width=900w 900w, https://cdn.shopify.com/s/files/1/0122/4785/9296/products/AgateAntiqueBrassWireWrappedNecklace.png?format=pjpg&v=1639338480&width=600w 600w"
+        sizes="(max-width: 600px) 600px, (max-width: 900px) 900px, 600px"
+        width="1000"
+        height="1000"
+        src="https://cdn.shopify.com/s/files/1/0122/4785/9296/products/AgateAntiqueBrassWireWrappedNecklace.png?format=pjpg&v=1639338480&width=1050"
+        alt="Product test"
+      />
+    </div>
+  </main>
 
   <script src="js/menu.js" defer></script>
 </body>
